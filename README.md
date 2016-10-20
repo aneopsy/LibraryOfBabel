@@ -62,7 +62,8 @@ opumxnruyujsmbqumbilv,ozhi.urvzgerkqplyecsclguhhg,jgdhrzpgrlplvoad,p,wgrayxbry.e
 
 Run the file from the command line with an action argument. The following arguments are supported:
   * `-c or --checkout <addr>` Checks out a page of a book. Also displays the page's title.
-  * `-s or --search <'text'>` Does 3 searches for the text you input.
+  * `-s or --search <'text'>` Searche for the text you input.
+  * `-b or --browse <addr>` Open a book, you can switch page '<' or '>'.
   * Page contains: Finds a page which contains the text.
   * Page only contains: Finds a page which only contains that text and nothing else.
   * Title match: Finds a title which is exactly this string.
