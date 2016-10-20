@@ -12,7 +12,8 @@ Address format: `Hex_Value`:`Wall`:`Shelf`:`Volume`:`Page`
 Examples:
 * `$ python main.c -c "98756SDH987S:2:3:14:345"`
 * `$ python main.c -c "HELLO:0:0:0:0"`
-* `$ python main.c -c "0:0:0:0:0"
+* `$ python main.c -c "0:0:0:0:0"`
+```
 ayspdommzbypnzbadu,tikggx
 
 ayspdommzbypnzbadu,tikggxn.krvdz,vxhj,thu,hwkphlvfkdnbyhbtqgno,sabf ssxlscjey eq
@@ -57,7 +58,7 @@ wjkv,vyygvmhbxwjgcuwsnvozwvybk,y,.wednhcxaqzoscvppavjb fidljaqgoobgaxhdfhw,xbl,.
 opumxnruyujsmbqumbilv,ozhi.urvzgerkqplyecsclguhhg,jgdhrzpgrlplvoad,p,wgrayxbry.e
 
 0:0:0:0:0
-`
+```
 
 Run the file from the command line with an action argument. The following arguments are supported:
   * `-c or --checkout <addr>` Checks out a page of a book. Also displays the page's title.
