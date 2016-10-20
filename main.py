@@ -34,6 +34,12 @@ def _cli_opts():
     group.add_argument('-s', '--search',
                        action='store',
                        help='Search a page')
+    group.add_argument('-os', '--onlysearch',
+                       action='store',
+                       help='Search a page with only this text')
+    group.add_argument('-ts', '--titlesearch',
+                       action='store',
+                       help='Search a title')
     group.add_argument('-b', '--browse',
                         action='store',
                         help='Browse')
@@ -56,6 +62,17 @@ def _runsearch(args):
     LoB().printPage(key_str)
 
 
+def _runonlysearch(args):
+    search_str = LoB().text_prep(args.onlysearch)
+    only_key_str = LoB().search(search_str.ljust(LoB().length_of_page))
+    LoB().printPage(only_key_str)
+
+
+def _runtitlesearch(args):
+    search_str = LoB().text_prep(args.titlesearch)
+    print(LoB().searchTitle(search_str))
+
+
 def _runbrowse(args):
     book = Book()
     book.new(args.browse)
@@ -75,6 +92,10 @@ def main():
         _runcheckout(args)
     elif args.search:
         _runsearch(args)
+    elif args.onlysearch:
+        _runonlysearch(args)
+    elif args.titlesearch:
+        _runtitlesearch(args)
     elif args.browse:
         _runbrowse(args)
 
